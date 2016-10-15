@@ -1,0 +1,50 @@
+$color-table-border = #dadada;
+$background-color-table-header = #f3f3f3;
+
+table {
+	width: 100%;
+	text-align: left;
+	thead {
+		tr {
+			background-color: $color-bg;
+			th {
+				font-weight $font-weight-normal;
+				line-height: 300%;
+				border:0;
+				padding:0;
+				font-size: 1.4rem;
+				&:first-child {
+					text-align: center;
+				}
+				&:nth-child(2) {
+					padding-left: 2.5%;
+				}
+			}
+		}
+
+	}
+	tbody {
+		tr {
+			&:nth-child(odd) {
+				background-color: $color-bg-light;
+			}
+			&:nth-child(even) {
+				background-color: $color-bg;
+			}
+			td {
+				color: $color-black-light;
+				line-height: 300%;
+				border:0;
+				padding:0;
+				font-size:1.4rem;
+				white-space: nowrap;
+				&:first-child {
+					text-align: center;
+				}
+				&:nth-child(2) {
+					padding-left: 2.5%;
+				}
+			}
+		}
+	}
+}

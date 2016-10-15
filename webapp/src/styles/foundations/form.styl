@@ -1,0 +1,96 @@
+.control {
+	position: relative;
+	input.field,
+	select.field
+	 {
+		display: block;
+		width: 100%;
+		border: 0;
+		border-radius : 0;
+		color: $color-black;
+		font-size: 1.4rem;
+		&::-webkit-input-placeholder {
+			color: $color-black-light;
+		}
+		border-bottom: 1px solid #eee;
+		padding: 1.5rem 0;
+
+		&.error {
+			border-bottom: 1px solid $color-red;
+		}
+
+		&:focus {
+			border-bottom: 1px solid $color-gray-light;
+			outline: 0
+		}
+	}
+
+	&.selector {
+		select.field {
+			height: auto;
+		}
+		.iconfont {
+			position: absolute;
+			top: 1rem;
+			right: 2px;
+			color: #aaa;
+		}
+	}
+
+	&.file {
+		ellipse();
+		.fake {
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: 0;
+			font-size: 20px;
+			cursor: pointer;
+			opacity: 0;
+			margin-top: 12px;
+			padding: 14px 0 5px 0;
+			display: inline-block;
+			width: 100%;
+		}
+
+		input.field {
+			cursor pointer;
+		}
+	}
+}
+
+.center-form {
+	margin-right: auto;
+	margin-left: auto;
+	width: 26%;
+	margin-top: 10%;
+	h3 {
+		margin-bottom: 2.4rem;
+	}
+	.control {
+		width: 100%;
+		.field {
+			padding: 1.6rem 0;
+			font-size:1.6rem;
+			height: auto !important;
+			&::-webkit-input-placeholder {
+				color: $color-gray-light ;
+			}
+		}
+	}
+
+	.tip {
+		overflow: hidden;
+		margin-top: 2.2rem;
+		font-size: 1.3rem;
+		color: $color-gray-light;
+		a {
+			color: $color-blue;
+		}
+	}
+
+	.button-blue {
+		width: 100%;
+		margin-top: 3.6rem;
+	}
+}
